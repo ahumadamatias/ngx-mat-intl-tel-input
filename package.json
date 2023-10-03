@@ -1,71 +1,71 @@
 {
   "name": "ngx-mat-intl-tel-input",
   "version": "5.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "test:cli": "ng test ",
-    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build_lib": "ng build ngx-mat-intl-tel-input",
-    "npm_pack": "cd dist/ngx-mat-intl-tel-input && npm pack",
-    "package": "npm run build_lib && npm run copy-files && npm run npm_pack",
-    "copy-license": "cp ./LICENSE ./dist/ngx-mat-intl-tel-input",
-    "copy-readme": "cp ./README.md ./dist/ngx-mat-intl-tel-input",
-    "copy-files": "npm run copy-license && npm run copy-readme"
+  "peerDependencies": {
+    "@angular/common": ">=14.x",
+    "@angular/core": ">=14.x",
+    "@angular/forms": ">=14.x",
+    "@angular/platform-browser": ">=14.x",
+    "@angular/platform-browser-dynamic": ">=14.x",
+    "libphonenumber-js": "^1.10.11"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanansatpal/ngx-mat-intl-tel-input"
+  },
+  "author": {
+    "name": "Satpal Tanan",
+    "email": "tanansatpal@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "ng2",
+    "ng4",
+    "ng5",
+    "ng6",
+    "ng7",
+    "ng8",
+    "ng9",
+    "ng10",
+    "ng11",
+    "ng12",
+    "ng13",
+    "ng14",
+    "intl-tel-input",
+    "ng-intl-tel-input",
+    "phone number",
+    "phone",
+    "validation",
+    "international",
+    "i18n",
+    "country",
+    "dial",
+    "code",
+    "telephone",
+    "mobile",
+    "input",
+    "flag"
+  ],
+  "license": "MIT",
   "dependencies": {
-    "@angular/animations": "^16.2.6",
-    "@angular/cdk": "^16.2.5",
-    "@angular/common": "^16.2.6",
-    "@angular/compiler": "^16.2.6",
-    "@angular/core": "^16.2.6",
-    "@angular/forms": "^16.2.6",
-    "@angular/material": "^16.2.5",
-    "@angular/platform-browser": "^16.2.6",
-    "@angular/platform-browser-dynamic": "^16.2.6",
-    "@angular/router": "^16.2.6",
-    "core-js": "^3.32.2",
-    "libphonenumber-js": "^1.10.44",
-    "rxjs": "~7.8.1",
-    "tslib": "^2.6.2",
-    "zone.js": "~0.13.0"
+    "tslib": "^2.x"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.3",
-    "@angular-eslint/builder": "^16.2.0",
-    "@angular-eslint/eslint-plugin": "^16.2.0",
-    "@angular-eslint/eslint-plugin-template": "^16.2.0",
-    "@angular-eslint/schematics": "^16.2.0",
-    "@angular-eslint/template-parser": "^16.2.0",
-    "@angular/cli": "^16.2.3",
-    "@angular/compiler-cli": "^16.2.6",
-    "@angular/language-service": "^16.2.6",
-    "@types/jasmine": "~4.3.6",
-    "@types/jasminewd2": "~2.0.11",
-    "@types/node": "^20.7.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/eslint-plugin-tslint": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "eslint": "^8.50.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jsdoc": "^46.8.2",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
-    "jasmine-core": "~5.1.1",
-    "jasmine-spec-reporter": "~7.0.0",
-    "karma": "^6.4.2",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage-istanbul-reporter": "~3.0.3",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "^2.1.0",
-    "ng-packagr": "^16.2.3",
-    "protractor": "~7.0.0",
-    "ts-node": "^10.9.1",
-    "typescript": "5.1.6"
+  "module": "fesm2022/ngx-mat-intl-tel-input.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-mat-intl-tel-input.mjs",
+      "esm": "./esm2022/ngx-mat-intl-tel-input.mjs",
+      "default": "./fesm2022/ngx-mat-intl-tel-input.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
   }
 }
